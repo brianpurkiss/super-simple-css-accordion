@@ -11,11 +11,14 @@ Use the "checked" setting on the input to hide the content, remove it to show it
 
 It also has a simple CSS animation for the show/hide.
 
+It uses "max-height" and overflow to show hide, allowing it to be a dynamic height. It has a set max-height of 9000px. If the content is greater than 9000px, then make that number bigger. 
+
 
 ## Compatibility
 
-The transform property is not supported on IE8. 
+The transform property is not supported on IE8. Opacity has full support to IE9, and partial support further back. Perspective has support to IE10. So it won't animate nicely in older browsers, but it will still open and close on as old of a browser as is realistic.
 
+I believe it'll work (without animation) all the way back to IE7, but I'm not gonna test it.
 
 
 ## My Super Simple Series
